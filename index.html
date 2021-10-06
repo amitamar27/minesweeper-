@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Minesweeper</title>
+</head>
+
+<body onload="init()">
+    <div class="header">
+        <h2>Minesweeper</h2>
+    </div>
+
+    <ul>
+        <li onclick="gameLevel(this)" data-cellNums="4"><button>Beginner</button></li>
+        <li onclick="gameLevel(this)" data-cellNums="8"><button>Intermediate</button></li>
+        <li onclick="gameLevel(this)" data-cellNums="12"><button>Expert </button></li>
+    </ul>
+
+    <div class="model">
+        <div class="main">
+            <div class="elMarkedCount"><span></span></div>
+            <div onclick="playAgain()" class="playAgainBtn"></div>
+            <div class="elLives"> <span></span> 💙</div>
+        </div>
+    </div>
+
+
+
+    <div class="board">
+
+    </div>
+
+
+    <script src="js\utils.js"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>
